@@ -2,7 +2,7 @@
 
 ## Background
 
-There are 2 input topics for product and purchase information respectively. The product information is retreived from a postgres database. The purchase information is through a datagen source connector.
+There are 2 input topics for product(3 partitions) and purchase(6 partitions) information respectively. The product information is retreived from a postgres database. The purchase information is through a datagen source connector with JSON convertor.
 
 ## Setup
 
@@ -26,6 +26,7 @@ docker-compose exec -it postgres psql "postgres://platformatory:plf_password@pos
   - Output should include the amount from sales as well
     - Calculate the amount from purchase by multiplying the quantity with product price and deducting the discount percentage
   - The output should include the product information as well
+- The output should be in avro format
 
 [TODO]
 
