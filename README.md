@@ -21,7 +21,7 @@ docker-compose exec -it postgres psql "postgres://platformatory:plf_password@pos
 
 ## Requirements
 
-- Find the top performing product every 5 minutes in the past 1 hour
+- Find the top performing product every 5 minutes for the past 1 hour
   - Top performing product = product with highest amount in sales
   - Output should include the amount from sales as well
     - Calculate the amount from purchase by multiplying the quantity with product price and deducting the discount percentage
